@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .phone {
+        width: 300px;
+        height: 550px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+  }
+  .login-box {
+    width: 225px;
+    margin: 0 auto;
+    background: rgb(157, 233, 233);
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: black;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+  }
+  input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background: white;
+    border: 0;
+    color: black;
+    border-radius: 5px;
+    font-weight:bold;
+  }
+  input[type="submit"]:hover {
+    background: black;
+    cursor: pointer;
+    color: white;
+  }
+  h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+</style>
+</head>
+<body>
+    <div class="phone">
+        <div class="login-box">
+            <h2>Login Page</h2>
+            <form action="/login" method="post">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" placeholder="Enter your username" required>
+          
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          
+              <input type="submit" value="Login" type="button" 
+              onclick="location.href='https://savi2905.github.io/lang/'">
+            </form>
+          </div>
+       </div>
+</body>
+</html>
